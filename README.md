@@ -4,7 +4,6 @@
 ## 2. Implementation of different categories of operators.
 # Ex.No:1
   Build a C program to demonstrate the usage of different types of literals: integer, float, character, and string.  
-# Date : 
 # Aim:
 To build a C program that prints integer, float,character, and string literals on the console using the printf() function.
 # Algorithm:
@@ -26,7 +25,26 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int intLiteral = 25;
+    float floatLiteral = 12.5f;
+    char charLiteral = 'A';
+    char stringLiteral[] = "Hello, C Programming!";
+
+    printf("Integer Literal: %d\n", intLiteral);
+    printf("Float Literal: %.2f\n", floatLiteral);
+    printf("Character Literal: %c\n", charLiteral);
+    printf("String Literal: %s\n", stringLiteral);
+
+    return 0;
+}
+
+```
 # Output:
+![alt text](image.png)
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -35,7 +53,6 @@ Thus, the program was implemented and executed successfully, and the required ou
 # IAPR-1- Module 1 - FoC
 # Ex.No:2
   Build a C program to display the value of a macro constant and a constant variable.
-# Date : 
 # Aim:
   To build a C program that demonstrates the use of macro constants and constant variables.
 # Algorithm:
@@ -57,7 +74,22 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include <stdio.h>
+#define PI 3.14159
+
+int main() {
+    const int MAX = 100;
+
+    printf("Macro Constant (PI): %.5f\n", PI);
+    printf("Constant Variable (MAX): %d\n", MAX);
+
+    return 0;
+}
+
+```
 # Output:
+![alt text](image-1.png)
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,7 +113,25 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int i = 10;
+    float f = 12.5f;
+    double d = 123.456789;
+    char c = 'C';
+
+    printf("Integer value: %d\n", i);
+    printf("Float value: %.2f\n", f);
+    printf("Double value: %.6f\n", d);
+    printf("Character value: %c\n", c);
+
+    return 0;
+}
+```
 # Output:
+![alt text](image-2.png)
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -120,7 +170,39 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    printf("Enter first integer: ");
+    scanf("%d", &a);
+
+    printf("Enter second integer: ");
+    scanf("%d", &b);
+
+    printf("\nArithmetic Operations:\n");
+    printf("Addition (a + b) = %d\n", a + b);
+    printf("Subtraction (a - b) = %d\n", a - b);
+    printf("Multiplication (a * b) = %d\n", a * b);
+    printf("Division (a / b) = %d\n", a / b);
+    printf("Remainder (a %% b) = %d\n", a % b);
+
+    printf("\nBitwise Operations:\n");
+    printf("AND (a & b) = %d\n", a & b);
+    printf("OR (a | b) = %d\n", a | b);
+    printf("XOR (a ^ b) = %d\n", a ^ b);
+    printf("Left Shift (a << 1) = %d\n", a << 1);
+    printf("Right Shift (a >> 1) = %d\n", a >> 1);
+    printf("NOT (~a) = %d\n", ~a);
+    printf("NOT (~b) = %d\n", ~b);
+
+    return 0;
+}
+```
 # Output:
+![alt text](image-3.png)
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +247,32 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    char ch;
+
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
+
+    (ch >= '0' && ch <= '9') ?
+        printf("'%c' is a Digit.\n", ch)
+    :
+    ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+        ((ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+          ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+            ? printf("'%c' is a Vowel.\n", ch)
+            : printf("'%c' is a Consonant.\n", ch))
+    :
+        printf("'%c' is a Special Symbol.\n", ch);
+
+    return 0;
+}
+```
 # Output:
+![alt text](image-4.png)
+![alt text](image-5.png)
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
